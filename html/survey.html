@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/survey.css" />
+    
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        
+        
+        
+       <div>
+           <h1> Survey Form</h1>
+       </div>
+        <div>
+            <!--Personal Details / FieldSet  and a link  that will show up after you completed the form and pressed submit button-->
+         <form action="https://s3.amazonaws.com/www-inside-design/uploads/2018/06/ux-survey-sq-810x810.jpg"
+             id="survey-form">
+             <fieldset>
+                 <legend>Details</legend>
+                FirstName<input type="text"><br>
+                 Surname <input type="text"><br>
+                    Email<input type="text"><br>
+                     Age <input type="text"><br>
+
+             </fieldset>
+           
+            </form action = "C:\Users\Andrei S\Desktop\freeCode">
+               <!-- Paragraph and DropDown menu  -->
+               <p> Which option best describes your current role</p>
+               <select id="dropdown" name="role" class="form-control" required>
+                   <option disabled selected value> Select current role</option>
+                   <option value="student">Student</option>
+                   <option value="Full-time Job">Full-Time Job</option>
+                   <option value="Part-time">Part-time Job</option>
+                   <option value="Unemployed person">Unemployed Person</option>
+                   <option value="Prefer not to say">Prefer not to Say</option>
+               </select>
+               
+           
+                <!-- Radio Buttons-->
+                <p> Would you recommend us to your friends/family?</p>
+                <label for="Definitely">
+                    Definitely
+                    <input type="radio" name="Definitely" />
+                </label>
+                <label for="Maybe"> Maybe
+                    <input type="radio" name="Maybe" />
+                </label>
+                <label for="Not sure"> Not sure
+                  <input type="radio" name="Not sure" />
+                </label>
+                <label for="Absolutely Not"> Absolutely not
+                 <input type="radio" name="Absolutely Not" />
+                </label>
+            
+              <!--Paragraph and DropDown Button Menu-->
+                <p> Which of our services makes you most happy?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value> Choose one</option>
+                    <option value="Delivery Time">Delivery Time</option>
+                    <option value="Packaging quality">Packaging Quality</option>
+                    <option value="Product Bundles">Product Budles</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="I am happy with all your services">I am happy with all your services</option>
+                </select>
+            
+              <!-- Paragraph and Checkboxes Options-->
+                <p> Which of our services are most unsatisfactory?</p>
+                <label for="Delivery time"> Delivery time
+                 <input type="checkbox" name="Delivery" />
+                </label>
+                <label for="Poor Packaging Quality"> Poor Packaging Quality
+                 <input type="checkbox" name="Poor Packaging Quality" />
+                </label>
+                <label for="Unsatisfactory Product Bundles"> Unsatisfactory Product Bundles
+                 <input type="checkbox" name="Unsatisfactory Product Bundles" />
+                </label>
+                <label for="Poor Customer Services">Poor Customer Services
+                 <input type="checkbox" name="Poor Customer Services" />
+                </label>
+                <label for="All your services are poor"> All your services are poor
+                 <input type="checkbox" name="All your services are poor" />
+                </label>
+            
+                 <!-- Suggestion Box-->
+                 
+                   <label for="comments"> Any comments or suggestions?
+                  <input id="suggestions" type="text" name="comments" 
+                  style="height:200px; width:363px" placeholder="Add your thoughts here.."/>
+                  </label>
+                 
+                 <form action="C:\Users\Andrei S\Desktop\Survey form" method="post" name="YourSurvey">
+                <!-- Link address for getting the completed survey forms-->
+                   <button type="submit">Submit</button>
+                 </form>
+                
+            </div>
+       </form>
+    </header>
+
+</body>
+</html>
